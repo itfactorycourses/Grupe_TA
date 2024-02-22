@@ -9,8 +9,8 @@ job_actual_adina = "administrator"
 # NUME = input("Va rugam sa introduceti numele")
 # DATA_NASTERII = input("Va rugam sa introduceti data nasterii")
 # DATA_INSCRIERE = input("Va rugam sa introduceti data inscrierii")
-varsta = int(input("Va rugam sa introduceti varsta "))
-print(type(varsta))
+# varsta = int(input("Va rugam sa introduceti varsta "))
+# print(type(varsta))
 
 # Definiți o nouă variabilă numită procent_invatare care va stoca un procent ce va descrie
 # nivelul de informații pe care credeți că ați ajuns să le stăpâniți de la începutul
@@ -55,4 +55,13 @@ print(f"Adina are un job de {job_actual_adina} si are un procent de invatare "
 # biletului și valoarea discountului.
 # Ce trebuie sa îi faceti funcției input pentru ca acest exercițiu să funcționeze?
 
+VALOARE_EXCURSIE = float(input("Va rugam sa introduceti valoarea excursiei "))
+PROCENT_DISCOUNT = float(input("Va rugam sa introduceti procentul de discount aplicat "))
+VALOARE_DISCOUNT = VALOARE_EXCURSIE * PROCENT_DISCOUNT
+valoare_excursie_cu_discount = VALOARE_EXCURSIE - VALOARE_DISCOUNT
+print(f"Valoare initiala excursie: {VALOARE_EXCURSIE}")
+print(f"Procent discount: {PROCENT_DISCOUNT}")
+print(f"Valoare discount: {VALOARE_DISCOUNT}")
+
+print(f"Valoarea excursiei cu discount este {valoare_excursie_cu_discount}")
 # Adăugați comentarii înaintea fiecărei linii de cod și explicați ce face
