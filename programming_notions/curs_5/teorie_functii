@@ -1,0 +1,23 @@
+Functiile sunt linii de cod care sunt grupate sub un singur nume cu scopul de a fi
+folosite ulterior.
+
+Ele sunt definite prin cuvantul cheie def si au un corp care reprezinta un bloc de cod
+marcat de indentare
+
+Functiile pot avea uneori nevoie de valori din exterior. Aceste valori la definirea functiei
+        poarta numele de parametri.
+        Atunci cand apelam functia (adica atunci cand instruim sistemul sa se duca la adresa
+        de memorie cu numele functiei care contine codul pe care il va executa functia)
+        valorile efective care sunt date parametrilor se numesc argumente
+
+Functiile pot sa aiba 0, 1 sau mai multi parametri, sau chiar un numar indefinit de parametri
+
+Atunci cand in interiorul unei functii am procesat o informatie care trebuie trimisa
+        catre exterior, atunci putem sa definim o functie cu instructiune de return
+        In mod implicit toate functiile vor returna None
+
+structura unei functii:
+- inceputul unei functii - cuvantul cheie def
+- numele functiei - free text dar de preferat sa fie ceva relevant care descrie actiunea care se face in functie
+- lista de parametri - marcati intre paranteze rotunde, daca nu exista, parantezele vor fi goale
+- blocul functiei - marcat de indentare fata de marginea fisierului

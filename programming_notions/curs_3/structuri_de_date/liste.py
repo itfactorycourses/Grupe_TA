@@ -97,3 +97,4 @@ lista_cursanti_prezenti_astazi = ["Aurelian","Daniela","Dino","Roby","Alexandra"
 # # print(lista_cursanti_prezenti_astazi)
 #
 # print(type(set(lista_cursanti_prezenti_astazi)))
+
