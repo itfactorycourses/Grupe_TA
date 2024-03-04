@@ -7,6 +7,7 @@ componentele structurii repetitive while:
 - incrementarea variabilei de iteratie
 
 """
+
 from programming_notions.curs_3.structuri_de_date.liste import lista_cursanti_prezenti_astazi
 
 i = 0
