@@ -1,6 +1,6 @@
 """
 
-componentele structurii repetitive while:
+Componentele structurii repetitive while:
 - inceputul structurii repetitive - while
 - conditia de iteratie care se va verifica inainte sa se intre in blocul de cod
 - blocul de cod care se va executa atata timp cat nu am ajuns la finalul colectiei de elemente

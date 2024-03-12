@@ -1,0 +1,28 @@
+poo este prescurtarea de la programare orientata pe obiecte
+    (sau OOP = object oriented programming in engleza) si se numeste asa pentru ca se foloseste
+    de o grupare a elementelor de cod in functie de anumite criterii.
+
+In general felul in care functioneaza programarea orientata pe obiecte este prin
+definirea anumitor tipare numite clase care definesc niste elemente din viata reala.
+
+Un concept din viata reala este definit de atributele (care intr-o clasa vor
+fi variabile cu niste valori implicite) care il descriu si respetiv actiunile
+pe care acest concept le executa (care intr-o clasa vor fi metode) sau care pot fi executate asupra lui.
+
+
+Exemplu:
+Daca vorbim despre entitatea facturi, o factura este descrisa de atribute cum ar fi
+    id-ul de factura, numarul de factura, valoarea, id-ul de client, perioada de
+    facturare si data scadenta.
+
+   Daca vorbim despre actiunile care pot fi facute pe o factura vorbim despre
+   calculul facturii, emiterea facturii, trimiterea ei catre client, si plata facturii
+
+
+
+Avand in vedere ca o clasa reprezinta un tipar al unei entitati din viata reala,
+    acest tipar poate fi implementat in elemente efective prin ceea ce se numeste
+    instantiere a unui obiect.
+    Un obiect este punerea in practica a tiparului definit de o clasa.
+    Atunci cand instantiem un obiect se rezerva o adresa de memorie care va stoca valori particulare
+    pentru toate atributele definite in clasa.
