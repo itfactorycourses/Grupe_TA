@@ -13,14 +13,13 @@ class Factura():
     id-ul de factura, numarul de factura, valoarea, id-ul de client, perioada de
     facturare si data scadenta.
 		"""
-		facturi_client = {"id_client":
+		facturi_client = {1:
 												{
-														"id_factura":"",
-														"numar_factura": "",
-														"valoare": 0,
-														"inceput_facturare":"",
-														"sfarsit_facturare":"",
-														"data_scadenta":""
+														"FACT01":{
+																		"valoare": 0,
+																		"inceput_facturare":"",
+																		"sfarsit_facturare":"",
+																		"data_scadenta":""}
 												}
 											}
 
@@ -42,10 +41,11 @@ class Factura():
 
 		# factura_03 = Factura("floricele")
 
-		def __init__(self, id_factura):
+		def __init__(self, id_client,id_factura,valoare):
 				while "FACT" not in id_factura:
 						id_factura = input("Va rugam sa introduceti factura corecta. Trebuie sa inceapa cu FACT")
-				self.facturi_client["id_client"]["id_factura"] = id_factura
+				self.facturi_client[id_client][id_factura]["valoare"] = valoare
+
 		"""  
     Daca vorbim despre actiunile care pot fi facute pe o factura vorbim despre 
     calculul facturii, emiterea facturii, trimiterea ei catre client, si plata facturii
@@ -80,13 +80,17 @@ class Factura():
 		def calculeaza_factura(self,nr_kilowati_luna_curenta, pret_per_kilowat):
 				return nr_kilowati_luna_curenta * pret_per_kilowat
 
-		def emite_factura(self):
-				print(f"Factura cu id-ul {self.facturi_client['id_client']['id_factura']} a fost emisa")
+		def actualizeaza_data_scadenta(self,id_client,id_factura,noua_data_scadenta):
+				self.facturi_client[id_client][id_factura]["data_scadenta"] = noua_data_scadenta
+
+		def emite_factura(self,id_client, id_factura):
+				print(f"Factura cu id-ul {self.facturi_client[id_client][id_factura]} a fost emisa")
 				factura_emisa = True
 				return factura_emisa
 
 		def trimite_catre_client(self,adresa_mail_client):
 				print(f"Factura pentru clientul {adresa_mail_client} a fost trimisa")
+
 
 # Pentru a instantia (echivalentul initializarii) un obiect dintr-o clasa o
 # sa scriem numele obiectului urmat de caracterul "=" si apoi urmat de numele clasei
@@ -128,7 +132,6 @@ class Factura():
 # factura_01.emite_factura()
 # # print(factura_01.trimite_catre_client("ion.popescu@gmail.com"))
 # # factura_01.trimite_catre_client("ion.popescu@gmail.com")
-#
 
-factura_03 = Factura("floricele")
-print(f"Valoarea facturii este: {factura_03.facturi_client['id_client']['id_factura']}")
+factura_03 = Factura(1,"FACT",356)
+print(f"Valoarea facturii este: {factura_03.facturi_client[1]['FACT01']}")
