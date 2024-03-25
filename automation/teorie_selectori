@@ -1,0 +1,29 @@
+Atunci cand facem testare automata, una dintre modalitatile prin care putem
+sa facem acest lucru este folosind libraria Selenium.
+
+Aceasta librarie contine diverse metode prin intermediul carora putem sa
+interactionam cu elementele web.
+
+Atunci cand vrem sa lucram cu libraria Selenium trebuie sa folosim ceea ce se numeste
+driver. Acest driver este practic modalitatea prin care sistemul de automatizare
+este capabil sa deschida un browser web.
+
+In automatizare, acest driver se poate descarca automat de catre sistem
+atunci cand il instantiem din clasa Driver disponibila in libraria seleniumbase.
+
+ca sa putem sa folosim aceasta librarie ea trebuie sa fie instalata.
+
+Exista patru modalitati de a o instala:
+1. prin hover (punerea cursorului peste numele librariei, fara sa dam click) si apoi sa selectam optiunea de instalare
+2. prin intrarea in python packages disponibil in stanga jos, cautarea pachetului seleniumbase si instalarea lui
+3. prin intrarea in terminal si trimiterea comenzii pip install seleniumbase
+4. prin intrarea in setarile interpretorului:
+- click pe numele interpretorului din dreapta jos (ex: Python 3.10)
+- click pe interpreter settings
+- click pe semnul "+"
+- cautati libraria seleniumbase
+- selectati-o atunci cand o identificati
+- click pe install package
+
+Orice alta librarie necesara se va instala in acelasi fel
+
