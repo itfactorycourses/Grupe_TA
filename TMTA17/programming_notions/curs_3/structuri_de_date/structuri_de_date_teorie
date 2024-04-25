@@ -1,0 +1,61 @@
+Structurile de date sunt adrese de memorie care pot sa stocheze mai multe informatii
+        In python exista patru structuri de date principale:
+        - liste
+        - tupluri
+        - seturi
+        - dictionare
+
+1. Listele sunt structuri de date care pot sa stocheze diverse informatii de diverse tipuri de date
+      in aceeasi adrese de memorie
+    (asta este o particularitate a python, pentru ca in alte limbaje de programare tipul de date
+    al structurilor de date este definit strict la declararea acelor structuri de date).
+    Caracteristici ale listelor:
+    - sunt ordonate (fiecare element din lista are o pozitie fixa reprezentata de un index)
+    - indexul primului element din lista incepe de la 0
+    - sunt mutabile (mutabilitate = capacitatea listei de a putea fi modificata)
+    - permite adaugarea si stergerea elementelor
+                - adaugarea se poate face la finalul listei cu metoda append
+                            sau in interiorul listei la o anumita pozitie cu functia insert
+                - stergerea se poate face prin eliminarea ultimului element din lista
+                            cu metoda pop sau prin eliminarea unui element specific din interiorul
+                            listei cu metoda remove
+    - permite modificarea pozitiei elementelor in interiorul listei
+    - permite elemente duplicate
+    - se defineste prin specificarea elementelor intre paranteze patrate
+    - daca vrem sa definim o lista goala punem paranteze patrate fara sa punem nimic in interiorul lor
+    - elementele din lista sunt separate de virgula
+
+2. Seturile sunt structuri de date care pot sa stocheze diverse informatii  de diverse tipuri de date in aceeasi
+    adresa de memorie.
+    Caracteristici ale seturilor:
+    - NU SUNT INDEXATE (elementele nu au o pozitie specifica in adresa de memorie)
+    - NU SUNT ORDONATE (daca nu au index nu cum sa aiba o ordine)
+    - sunt mutabile, dar putem sa facem DOAR ADAUGARE SI STERGERE DE ELEMENTE. Deci nu putem
+               modifica pozitia elementelor din set pentru ca elementele nu au pozitie
+    - nu permite elemente duplicate pentru ca elementele sunt identificate prin valoarea lor
+    - se defineste prin specificarea elementelor intre acolade
+    - daca vrem sa definim un set gol ne folosim de functia set()
+    Ca si corelatie, puteti sa va imaginati setul ca un saculeet cu bilute
+            Cand bagam mana in saculet sa luam o biluta, celelalte bilute pot sa isi modifice pozitia
+
+
+3. Tuplurile sunt structuri de date care stocheaza mai multe informatii la aceeasi adresa de memorie
+Caracteristici ale listelor:
+    - sunt ordonate (fiecare element din lista are o pozitie fixa reprezentata de un index)
+    - indexul primului element din lista incepe de la 0
+    - sunt imutabile (mutabilitate = capacitatea listei de a putea fi modificata)
+    - NU PERMITE adaugarea sau stergerea elementelor
+    - NU PERMITE modificarea pozitiei elementelor in interiorul tuplului
+    - permite elemente duplicate
+    - se defineste prin specificarea elementelor intre paranteze rotunde
+    - daca vrem sa definim un tuplu gol punem paranteze rotunde fara sa punem nimic in interiorul lor
+    - elementele din tuplu sunt separate de virgula
+
+4. Dictionarele sunt structuri de date care contin perechi cheie:valoare
+    Caracteristici ale dictionarelor:
+    - sunt ordonate (incepand cu python 3.7)
+    - sunt mutabile
+    - elementele sunt identificabile prin intermediul cheii
+    - cheile sunt unice, dar valorile de pe cheie se pot modifica
+    - putem sa avem dictionar in dictionar (il numim dictionar imbricat, nested dictionary, embeded dictionary)
+

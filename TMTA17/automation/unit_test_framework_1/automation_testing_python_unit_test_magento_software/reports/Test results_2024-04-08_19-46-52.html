@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test_execution_Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Test_execution_Report</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-04-08 19:46:52</p>
+                <p class='attribute'><strong>Duration: </strong>43.51 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 1, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>automation.curs_11_12.test_search.Magento_login</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_sorting_by_price_descending</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>
+Warning: chromedriver update needed. Getting it now:
+
+*** chromedriver version for download = 114.0.5735.90 (Latest)
+
+Downloading chromedriver_mac_arm64.zip from:
+https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_mac_arm64.zip ...
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 1 -- Duration: 26.14 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>automation.curs_11_12.test_login.Test_Login</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_check_sign_in_not_possible_when_user_and_pass_empty</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>
+Warning: chromedriver update needed. Getting it now:
+
+*** chromedriver version for download = 114.0.5735.90 (Latest)
+
+Downloading chromedriver_mac_arm64.zip from:
+https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_mac_arm64.zip ...
+</p><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"Sign In "}
+  (Session info: chrome=123.0.6312.107); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x00000001028ae598 chromedriver + 4404632
+1   chromedriver                        0x0000000102835fa3 chromedriver + 3911587
+2   chromedriver                        0x00000001024e2e6a chromedriver + 425578
+3   chromedriver                        0x000000010251ac91 chromedriver + 654481
+4   chromedriver                        0x000000010251ae91 chromedriver + 654993
+5   chromedriver                        0x0000000102552274 chromedriver + 881268
+6   chromedriver                        0x0000000102538dcd chromedriver + 777677
+7   chromedriver                        0x000000010254ff79 chromedriver + 872313
+8   chromedriver                        0x0000000102538bd3 chromedriver + 777171
+9   chromedriver                        0x000000010250dced chromedriver + 601325
+10  chromedriver                        0x000000010250ee51 chromedriver + 605777
+11  chromedriver                        0x000000010287e0ce chromedriver + 4206798
+12  chromedriver                        0x0000000102882797 chromedriver + 4224919
+13  chromedriver                        0x0000000102889a4f chromedriver + 4254287
+14  chromedriver                        0x00000001028834da chromedriver + 4228314
+15  chromedriver                        0x000000010285c23f chromedriver + 4067903
+16  chromedriver                        0x00000001028a06a8 chromedriver + 4347560
+17  chromedriver                        0x00000001028a0816 chromedriver + 4347926
+18  chromedriver                        0x00000001028b58fe chromedriver + 4434174
+19  libsystem_pthread.dylib             0x00007ff81fa6d4e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff81fa68f6b thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/gradulescu/Desktop/All/Personal/GIT/Python_Automation_TMTA17/automation/curs_11_12/test_login.py", line 18, in setUp
+    self.driver.find_element(*self.SIGN_IN_LINK).click()
+  File "/Users/gradulescu/Library/Python/3.10/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 740, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/Users/gradulescu/Library/Python/3.10/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 346, in execute
+    self.error_handler.check_response(response)
+  File "/Users/gradulescu/Library/Python/3.10/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"Sign In "}
+  (Session info: chrome=123.0.6312.107); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x00000001028ae598 chromedriver + 4404632
+1   chromedriver                        0x0000000102835fa3 chromedriver + 3911587
+2   chromedriver                        0x00000001024e2e6a chromedriver + 425578
+3   chromedriver                        0x000000010251ac91 chromedriver + 654481
+4   chromedriver                        0x000000010251ae91 chromedriver + 654993
+5   chromedriver                        0x0000000102552274 chromedriver + 881268
+6   chromedriver                        0x0000000102538dcd chromedriver + 777677
+7   chromedriver                        0x000000010254ff79 chromedriver + 872313
+8   chromedriver                        0x0000000102538bd3 chromedriver + 777171
+9   chromedriver                        0x000000010250dced chromedriver + 601325
+10  chromedriver                        0x000000010250ee51 chromedriver + 605777
+11  chromedriver                        0x000000010287e0ce chromedriver + 4206798
+12  chromedriver                        0x0000000102882797 chromedriver + 4224919
+13  chromedriver                        0x0000000102889a4f chromedriver + 4254287
+14  chromedriver                        0x00000001028834da chromedriver + 4228314
+15  chromedriver                        0x000000010285c23f chromedriver + 4067903
+16  chromedriver                        0x00000001028a06a8 chromedriver + 4347560
+17  chromedriver                        0x00000001028a0816 chromedriver + 4347926
+18  chromedriver                        0x00000001028b58fe chromedriver + 4434174
+19  libsystem_pthread.dylib             0x00007ff81fa6d4e1 _pthread_start + 125
+20  libsystem_pthread.dylib             0x00007ff81fa68f6b thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 17.38 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

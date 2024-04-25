@@ -1,0 +1,32 @@
+Cerinte:
+
+Identificarea tuturor caracteristicilor functionale ale aplicatiei tinta: candidatul
+    va identifica toate caracteristicile sau aspectele specifice ale aplicatiei
+    sau sistemului pe care doreste sa-l testeze automat -> Done => au fost descrise in fisierul lista_teste_de_facut
+
+Planificarea testelor automate: candidatul va elabora un plan de testare care sa includa
+    scenarii de testare relevante pentru caracteristicile identificate
+    Acest plan ar trebui sa defineasca pasii testelor si asteptarile rezultatelor => au fost descrise in detaliu
+           scenariile in fisierul lista_teste_de_facut marcate cu liniuta
+
+Implementarea testelor automate: candidatul va dezvolta teste automate
+   folosind obligatoriu Selenium Webdriver si Python => se regasesc in fisierele de teste automate definite prin
+            intermediul librariei unit test (spre exemplu in fisierul test_search_items)
+
+Executia testelor: Testele automate vor fi rulate pentru a verifica functionalitatea corecta => se face prin apasarea
+    butonului verde in forma de triunghi
+
+Generarea rapoartelor de testare: Dupa ce testele au fost rulate se vor genera rapoarte care sa includa
+        rezultatele testelor si orice erori sau probleme identificate -> am generat raportul de executie
+                        prin intermediul suitelor de teste
+                        Si putem gasi raportul in folderul reports
+
+Documentarea finala: Candidatul va elabora o documentatie completa pentru proiect, inclusiv descrierea
+        caracteristicilor, descrierea testelor, descrierea pasilor pentru configurarea mediului
+        de testare si rularea testelor automate
+
+Prezentarea rezultatelor: Candidatul va prezenta rezultatele testelor automate si rapoartele generate pentru a demonstra
+        functionalitatea sau problema identificata. De asemenea, candidatul va prezenta indicatorii de performanta
+        asociati uneltelor de testare automata utilizate (de exemplu: acuratete, usurime in implementare, eficienta etc)
+
+

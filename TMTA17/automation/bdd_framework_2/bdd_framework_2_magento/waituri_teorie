@@ -1,0 +1,50 @@
+Uneori, aplicatia web poate sa se incarce mai greu, iar codul sa ruleze mai repede
+        decat se poate incarca aplicatia
+        Din acest motiv exista situatii in care sistemul incearca sa identifice
+        un element html inainte ca acesta sa se fi incarcat in pagina, motiv pentru care
+        poate returna eroare NoSuchElementException.
+
+In testare automata exista trei modalitati prin care putem sa instruim sistemul sa astepte:
+
+a) metoda sleep din libraria time (care trebuie importata)
+    - va astepta numarul de secunde care a fost trimis ca si argument la metoda sleep.
+    Chiar daca elementul este identificat mai devreme, sistemul tot va astepta
+    numarul de secunde desemnat de argument
+
+    Daca elementul nu este identificat se pot intampla urmatoarele:
+    - daca sleep-ul este pus inaintea instructiunii de cautare a elementului, atunci
+            sistemul va astepta numarul desemnat de secunde si apoi va returna mesajul de eroare
+    - daca sleep-ul este pus dupa instructiunea de cautare a elementului, atunci
+            sistemul va returna eroarea NoSuchElement exception si nu va mai ajunge
+            sa astepte numarul de secunde desemnat
+
+b) Implicit wait - va instrui sistemul ca de fiecare data cand nu identifica un element
+        sa reincerce sa il caute pentru un numar de secunde desemnat conform wait-ului.
+        Daca dupa numarul de secunde desemnat de wait elementul in cauza nu e gasit
+            atunci se va returna timeout exception
+        Acest wait este global, deci se va aplica tuturor elementelor
+        Daca elementul este gasit inaintea trecerii numarului de secunde desemnat,
+            atunci sistemul nu va mai astepta si va merge mai departe
+
+c) Explicit wait - va instrui sistemul ca de fiecare data cand nu identifica un element specific
+            sa reincerce sa il caute pentru un numar de secunde desemnat conform wait-ului.
+            Daca dupa numarul de secunde desemnat de wait elementul in cauza nu e gasit
+            atunci se va returna timeout exception
+            Daca elementul este gasit inaintea trecerii numarului de secunde desemnat,
+            atunci sistemul nu va mai astepta si va merge mai departe
+            Explicit wait spre deosebire de implicit wait, se aplica PE UN SINGUR ELEMENT.
+
+            Daca avem un element pe care este pus explicit wait si acesta va fi gasit, atunci se va actiona
+                    asupra lui dupa timpul care a fost necesar pentru a fi identificat. Adica, daca
+                    am un element pe care am pus un explicit wait de 30 de secunde si elementul a fost identificat
+                    dupa 10 secunde, atunci se va actiona asupra lui dupa 10 secunde si codul va merge mai departe
+                    (nu va mai astepta 30 de secunde).
+            Daca avem un element pe care este pus explicit wait si acesta nu va fi gasit in timpul desemnat
+                    conform wait-ului, atunci sistemul va returna eroare de timeout. Adica, daca am un element
+                    pe care am pus un explicit wait de 30 de secunde si elementul nu a fost identificat
+                    dupa 30 de secunde de cautare, atunci se va returna timeout exception
+            Daca avem un element pe care nu avem explicit wait si acesta este gasit, se va actiona asupra lui
+                    si codul va merge mai departe
+            Daca avem un element pe care nu avem explicit wait si acesta nu este gasit, se va returna instant
+                    eroarea NoSuchElementException
+

@@ -1,0 +1,13 @@
+Se numesc structuri repetitive pentru ca ele executa un bloc de cod de mai multe ori (in mod repetat)
+pana cand o conditie nu mai este indeplinita
+
+Exista trei structuri repetitive principale:
+- for = o structura repetitiva care parcurge un interval de valori si salveaza in variabila de iteratia
+                indexul elementul curent
+- foreach = o structura repetitiva care parcurge o serie de valori si salveaza in variabila de iteratia
+                valoarea curenta
+- while = o structura repetitiva care executa un bloc de cod atata timp cat o conditie este adevarata
+
+Diferenta intre for / foreach si while este ca la for stim exact de cate ori ar trebui sa fie parcurs codul
+        in schimb ce la while nu stim exact de cate ori trebuie sa executam codul pana cand ajungem
+        sa putem sa finalizam executia

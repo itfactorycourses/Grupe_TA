@@ -1,0 +1,20 @@
+Framework = structura organizata in care sunt create o serie de teste conform unei anumite logici
+
+La curs vom invata trei framework-uri de testare automata:
+- libraria unit test
+- BDD
+- API
+
+Libraria unit test functioneaza pe baza mostenirii clasei TestCase din fisierul unittest
+Atunci cand implementam libraria unit test avem nevoie de urmatoarele componente:
+a) fisiere care sa contina testarea diverselor module (in general este recomandat
+            sa pastram cate un fisier per modul)
+b) fiecare fisier va contine doua metode:
+- setup -> care va conține toate instrucțiunile care trebuie să fie executate înainte
+            de fiecare test
+c) fiecare fișier va conține suficiente metode de test cât să acopere o testare cât mai amplă
+            a modulului în scop
+            Numele metodelor trebuie să înceapă cu test_
+- teardown -> care va conține toate instrucțiunile care trebuie să fie executate după fiecare test
+d) suita de teste ->care va conține referință către toate clasele de test astfel încât să
+            le putem rula pe toate concomitent

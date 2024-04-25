@@ -1,0 +1,67 @@
+1. TDD = Este prescurtarea de la Test Driven Development si este o abordare
+            de software development in care testele unitare sunt scrise inaintea
+            scrierii codului
+            Avantajul este ca bazeaza dezvoltarea pe testele automate, acordandu-le
+             acestora o mai mare importanta.
+             Practic in felul asta descoperim defectele mai devreme (early testing)
+             si cream codul plecand de la functionalitatile pe care vrem sa le testam
+
+Atunci cand se face dezvoltare de tip TDD se urmaresc pasii de mai jos:
+- se scriu teste automate care acopera functionalitatile pe care ne dorim sa le acoperim
+- se ruleaza acele teste automate (la momentul asta toate testele or sa fie failed)
+- se scrie codul aferent aplicatiei bazandu-ne pe testele scrise
+- se actualizeaza testele automate dupa ce codul a fost creat si se reruleaza
+- daca testele sunt failed din cauza unor erori de scriere, se refactorizeaza (adica
+                se corecteaza, se elimina elementele redundante si se adapteaza)
+                dupa care se reruleaza.
+              daca testele sunt failed din cauza unor bug-uri, se creaza rapoarte
+              de defect care ulterior or sa fie rezolvate de catre dezvoltatori
+- dupa fixarea bug-urilor se reruleaza testele si se observa statusul
+- pasii de mai sus  (ultimii trei) se repeta pana cand toate testele vor fi passed
+
+1. Unit Test = testarea unitara este primul nivel de testare care implica testarea
+        celor mai mici functionalitati din cod (Ex: functii, clase etc)
+        Celelalte niveluri de testare sunt:
+        - integration testing (component integration testing, system integration testing)
+        - system testing
+        - acceptance testing (alfa testing, beta testing)
+
+2. Design Patterns = un template, o structra / organizare a codului facuta sa rezolve
+            o anumita problema
+Exemple de design patterns: POM, Singleton, Data Driven Testing, Keyword Driven Testing
+Pentru detalii puteti consulta o carte care se numeste Gang of Four (https://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8)
+
+3. BDD = Este o abordare de software development derivata din TDD care
+            acorda o mai mare importanta scenariilor de testare care vor fi cele
+            de la care se va pleca cu scrierea codului.
+            Avantajul acestui BDD este acela ca promoveaza scrierea testelor
+            intr-un limbaj natural care este inteles de catre toti membrii echipei,
+            indiferent daca sunt persoane tehnice sau nu
+
+Atunci cand se lucreaza bdd de regula se urmeaza structura urmatoare:
+- se creaza fisierele cu scenariile de testare care se doresc a fi acoperite
+- se scriu teste automate care implementeaza testele descrise in acele feature files
+- se ruleaza acele teste automate (la momentul asta toate testele or sa fie failed)
+- se scrie codul aferent aplicatiei bazandu-ne pe testele scrise
+- se actualizeaza testele automate dupa ce codul a fost creat si se reruleaza
+- daca testele sunt failed din cauza unor erori de scriere, se refactorizeaza (adica
+                se corecteaza, se elimina elementele redundante si se adapteaza)
+                dupa care se reruleaza.
+              daca testele sunt failed din cauza unor bug-uri, se creaza rapoarte
+              de defect care ulterior or sa fie rezolvate de catre dezvoltatori
+- dupa fixarea bug-urilor se reruleaza testele si se observa statusul
+- pasii de mai sus  (ultimii trei) se repeta pana cand toate testele vor fi passed
+
+- Gherkin = un limbaj de scriere a scenariilor de testare in BDD care descrie
+                functionalitatile pe care dorim sa le testam
+
+4. feature files = fisierele descriptive care contin scenariile BDD
+5. page files = fisierele care contin toate elementele de interactiune cu paginile web (selectori, metode)
+6. step definition files = sunt cele care fac legatura intre feature files si page files
+7. tags = reprezinta o modalitate de a marca un set de teste in acelasi fel astfel incat sa le putem rula impreuna
+
+Pentru lucrul cu BDD trebuie instalat un plugin numit gherkin si un plugin numit cucumber, si respectiv behave.ini
+Mai trebuie sa instalam libraria behave: pip install behave
+Mai trebuie sa instalam libraria behave-html-testRunner
+
+Se ruleaza cu comanda behave -f html -o behave-report.html

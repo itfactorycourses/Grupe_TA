@@ -1,0 +1,55 @@
+In programare exista patru piloni principali care ajuta in felul in care codul este organizat
+
+
+Cei patru piloni ai programarii sunt:
+1. polimorfism (polimorphysm) > πολή = mult,  μόρφοσ = forma =>
+                polimorfism = capacitatea unei functii / metode de a avea mai multe forme
+                 a) polimorfism prin definirea functiilor cu numar nelimitat de argumente
+                 b) polimorfism prin definirea functiilor cu parametrii impliciti
+                    def calculeaza_numere(a,b,c=0):
+                        return a+b
+                    calculeaza_numere(5,7)
+                 c) clasa A: calculeaza_data(a,b)
+                    clasa B: calculeaza_data(a,b)
+
+             Nota: In java se poate implementa encapsularea si prin definirea
+                        a doua metode identice dar cu numar diferit de parametri,
+                                tip de date diferit al parametrilor
+                                sau tip de date diferit al valorii de returnare
+                                In Java acest concept se numeste method overloading
+
+2. encapsulare (incapsulare / encapsulation) -> In mod normal, orice atribut dintr-o clasa poate fi accesat
+                        si modificat prin intermediul unui obiect instantiat din acea clasa.
+                        Encapsularea reprezinta posibilitatea de a restrictiona accesul la anumite
+                        atribute dintr-o clasa in exteriorul acelei clase, adica accesarea / modificarea
+                        acelor atribute prin intermediul obiectului instantiat
+                        Exista trei concepte (numite modificatori de acces) care implementeaza
+                        encapsularea:
+                        public = accesul implicit
+                        protected = permite accesul deplin de acces si modificare a atributului,
+                                dar el nu va fi vizibil in sugestiile atributelor accesibile
+                                   prin intermediul obiectului (atentie, in java protected inseamna
+                                   ca acel atribut va fi vizibil doar in acelasi pachet
+                                   in care se afla clasa, nu si in alte pachete)
+                        private = restrictioneaza orice forma de acces a atributului din afara clasei
+
+3. mostenire (inheritance) -> reprezinta posibilitatea ca o clasa (copil) sa mosteneasca toate atributele si metodele
+                        unei alte clase (parinte)
+
+4. abstractizare (abstraction) -> o modalitate prin intermediul careia putem sa ascundem anumite implementari
+                        ale unei functii pentru utilizatorul final.
+                        Se va implementa prin intermediul mostenirii clasei ABC (prescurtarea
+                                de la Abstract Base Class)
+                        O metoda poate fi marcata ca fiind abstracta prin plasarea deasupra ei
+                            a decoratorului @abstractmethod
+
+                        O clasa care mosteneste clasa ABC si / sau are o metoda abstracta se
+                            numeste clasa abstracta. Daca toate metodele dintr-o clasa sunt
+                            abstracte, atunci clasa se va numi interfata
+
+                        Un decorator este o proprietate pe care o adaugam unei metode
+                            cu scopul de a ii schimba comportamentul
+
+
+
+
