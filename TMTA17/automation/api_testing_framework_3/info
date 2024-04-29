@@ -2,3 +2,6 @@ de instalat:
 
 pip install pytest
 pip install pytest-html
+pip install  (pentru generare email random) (documentatie faker: https://www.geeksforgeeks.org/python-faker-library/)
+
+pip list -> comanda de verificare a tuturor librariilor instalat

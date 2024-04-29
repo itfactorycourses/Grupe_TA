@@ -1,0 +1,30 @@
+De facut pentru portofoliul de angajare:
+
+1. Proiecte testare manuala:
+- Jira (instructiuni in prezentarea Proiect_Final_P1 de la sesiunea 8)
+- API cu Postman (instructiuni in prezentarea Proiect_Final_P2 de la sesiunea 13)
+- SQL (instructiuni in prezentarea Proiect_Final_P3 de la sesiunea 17)
+
+2. Proiecte testare automata:
+- Libraria unit test
+- BDD
+- API cu Pycharm
+Pentru toate cele trei framework-uri puteti sa va ghidati dupa ce am facut la curs.
+Recomandat cat mai multe teste posibil (sa aveti o acoperire cat mai mare a aplicatiei)
+
+
+De facut pentru proiectul de examen:
+1. Daca va alegeti sa dati examenul din testare manuala trebuie sa alegeti ori Jira ori API cu Postman ori SQL
+2. Daca va alegeti sa dati examenul din testare automata trebuie sa alegeti ori unit test ori BDD ori API cu Pycharm
+
+Pentru examen e nevoie de doua elemente:
+1. Github care sa contina proiectul complet (la manuala conform instructiunilor din prezentari,
+                la automata conform modelelor de la curs)
+2. Prezentare power point de maxim 15 slide-uri care SA SUMARIZEZE ceea ce ati detaliat pe github
+
+Nota de la examen va fi primita pe baza mediei intre:
+1. Nota prezentare ppt
+- medie intre nota trainer coordonator si trainer examen
+- media rezultata va putea fi afectata in examen (scazuta sau crescuta) in functie raspunsul la 4 intrebari
+2. Nota test grila - durata 45 de minute - 15 intrebari (veti primi trei variante de teste grila pe care le puteti face de cate ori vreti
+                            la examen va pica una dintre ele)
